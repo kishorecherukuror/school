@@ -1,0 +1,7 @@
+<%= form_tag teachers_create_path do %>
+	Name:<%= text_field_tag "name" %><br />
+	Address:<%= text_field_tag "address" %><br />
+	<%=submit_tag %>
+<% end %>
+
+<p><%= link_to "Teacher", teachers_index_path %></p>
