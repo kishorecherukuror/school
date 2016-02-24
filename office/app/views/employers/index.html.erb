@@ -1,0 +1,15 @@
+<h1>Employers</h1>
+
+<table border="2">
+	<tr><th>Name</th>
+		<th>Address</th>
+	</tr>
+	<% @employers.each do |employer| %>
+	<tr>
+		<td><%=employer.name%></td>
+		<td><%=employer.address%></td>
+	</tr>
+	<% end %>
+</table>
+
+<p><%= link_to "New Employer", employers_new_path %></p>
